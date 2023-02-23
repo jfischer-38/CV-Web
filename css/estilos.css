@@ -1,0 +1,853 @@
+:root{
+    --tono: 324;
+    --complementario: 56;
+    --contraste: 230;
+
+    --color-principal: hsla(var(--tono), 100%, 40%,1);
+    --color-principal-medio:hsla(var(--tono),100%, 86%,1);
+    --color-principal-claro: hsla(var(--tono), 100%, 98%,1);
+    --color-principal-oscuro:hsla(var(--tono),100%, 15%,1);
+
+
+
+   /* --color-complementario:hsla(var(--complementario),100%,48%,1);*/
+
+    --color_contraste-oscro:hsla(var(--contraste), 13%, 10%,1);
+    --color_contraste-media:hsla(var(--contraste), 15%, 10%,1);
+
+--color-blanco:white;
+
+--fuente-principal: "poppins","noto-sans";
+
+--light:300;
+--normal: 600;
+--bold:600;
+
+}
+
+/*---conf general--*/
+
+h1,h2,h3,h4,h5,h6,p,a,span{
+   color:var(--color-contraste-oscuro);
+   text-decoration:none;
+   list-style: none;;
+}
+ul{
+list-style: none;
+}
+
+.light{
+    font-weight: var(--light);
+    }
+.normal{
+    font-weight: var(--normal);
+}
+.contact{
+    font-weight: var(--bold);
+}
+
+/**estilos*/
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:var(--fuente-principal);
+}
+
+
+/**spantalla celular 0px a 764px- SLIDER*/
+
+
+
+.Container{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+ 
+
+}
+.pagina1, .pagina2 {
+    width: 100vw;
+
+}
+
+.pagina1{
+    overflow: hidden;
+    min-height: 100vh;
+    background-color: var(--color-blanco);
+
+
+}
+
+.pagina2{
+    background-image: url(../imagen/fondo3.jpeg) ;
+    background-size: cover;
+    position: absolute;
+    opacity: 1;
+    min-height: 100vh;
+    transition: .5s all ease-in-out;
+    left:100%;
+    pointer-events: none;
+    /*celular y tablet*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 60px 500px ;
+    grid: 20px;
+
+}
+.mover{
+    left:0%;
+    pointer-events: all;
+    
+}
+
+/*celular-------  pagina 1 diseño----------------------------*/
+
+  
+.banner{
+    height: 200px;
+    padding: 20px;
+    border-radius: 0 0 20 px 20 px;
+    background-image: url(../imagen/fondo3.jpeg);
+    background-size: cover;
+    border-radius: 0 0 20px 20px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+
+    
+}
+.banner_titulo h1{
+    font-size: 2.5rem;
+    color:var(--color-blanco);
+    text-shadow: 4px 8px 18px black;
+
+   
+}
+.banner_titulo h2{
+    font-size: 2rem;
+    font-weight: var(--normal);
+    text-shadow: 3px 5px 15px black;
+
+}
+.miinformacion {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background-image: url(../imagen/fondo1.jpeg);
+    background-size: cover;
+    opacity: .9;
+    margin-right: 40px;
+    margin-left: 40px;
+  
+}
+
+.info_datos li  {
+    display: flex;
+    align-items: right;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    align-content: right;
+    align-items: center ;    
+}
+
+
+
+.info_datos i {
+    font-size: 35px;
+    margin-right: 20px;
+    justify-content: center;
+   
+}
+.info_datos{
+    margin-left: 100px;}
+
+.imagen_postulante{
+    width: 45%;
+    margin-left: 2px;
+    border-radius: 10px;
+    margin-top: -10px;
+    background-image: url(../imagen/fondo1.jpeg);
+    background-size: cover;
+}
+
+
+
+.presentacióntitulo h2 {
+    position: relative;
+    justify-content: center;
+    margin-left: 140px;
+    margin-bottom: 10px;
+    font-size: 30px;
+ 
+;
+}
+
+.presentacióntitulo p{
+        
+    margin-right: 140px;
+    margin-left: 140px;
+    font-size: 20px;
+    margin-top: 18px;
+    text-align: justify;
+       
+}
+.sección_botones{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10 px;
+    min-height: 1rem;
+ }
+ .sección_botones p {
+    font-size: 19px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9px;
+ 
+ }
+        
+.sección_botones a {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+background-image: url(../imagen/fondo3.jpeg);
+margin: 4% 20% 5% 10%;
+padding: .2rem;
+border-radius: 15px;
+font-size: .9rem;
+font-weight: 900;
+transition: .2 all ease-in-out;
+background-size: 100%;
+background-size: cover;
+        
+}
+.sección_botones :hover {
+
+    transform: scale(1.2);
+}
+
+
+
+
+  /*Celular------pagina 2-------------------------------------*/
+
+/*seccion experiencia*/
+.experiencia {
+    grid-row: 2/4;
+    grid-column: 2/3;
+    padding: 27px 0;
+    margin-bottom: 10px;
+    margin-top: 35px;
+    align-items: right;
+    font-size: 17px;
+ 
+}
+.experiencia h2 {
+    font-size: 30px;
+    margin-top: 10px;
+    text-transform: uppercase;
+   }
+
+.experiencia i{
+    font-size: 30px;
+    margin-top: 10px;
+    
+   }
+.sección_experiencia_info td {
+    padding: 0px 10px;
+    margin-right: 10px;
+    margin-left: auto;
+    font-size: 15.5px;
+        
+}
+
+.sección_experiencia_info td:first-child{
+    width: 125px;}
+
+
+.sección_experiencia_info .año{
+    font-weight: var(--bold);
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+
+/*barras habilidades*/
+.habilidades {
+grid-row: 2/4;
+grid-column: 1/2;
+padding: 27px 0px;
+margin-left: 80px;
+margin-top: 35px;
+align-items: right;
+font-size: 17px;
+
+}
+.habilidades h2 {
+    font-size: 30px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    padding: 0 100px;
+}
+.habilidades i {
+    padding: 0 100px;
+    font-size: 30px;
+    margin-top: 10px;
+   }
+
+
+.habilidades .barras{
+    Position:relative;
+    Width:100%;
+    Display:grid;
+    grid-template-columns: 300px 1fr;
+    Justify-content:left;
+    align-items: right;
+    padding: 0 90px; 
+    margin-top: 30px;
+    font-size: 20px;
+
+}
+.habilidades .barras spam{
+ font-size: 20px;
+ font-weight: bold; 
+   
+}
+
+.habilidades .barras .porcentaje {
+    Position: relative;
+    Width:100%;
+    Height:10px;
+    Background:rgb(231, 223, 223);
+   
+}
+.habilidades .barras .porcentaje div {
+    Position: absolute;
+    Top:0;
+    Left: 0px;
+    Height:100%;
+    Background:#3614af;
+   
+}
+
+    
+/***educaccion*/
+.estudios {
+    grid-row: 2/4;
+    grid-column: 3/4;
+    padding: 27px 0px;
+    margin-bottom: 10px;
+    margin-top: 35px;
+    align-items: right;
+    
+}
+.estudios h2  {
+    font-size: 30px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    margin-left: 30px;
+    
+     
+}
+.estudios i {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 30px;
+    
+}
+.sección_estudios_info td {
+    padding: 15px 20px 0px;
+    margin-right: 10px;
+    margin-left: 80px;
+    font-size: 17px;
+   }
+
+.sección_estudios_info td:first-child{
+    width: 110px;
+  }
+
+
+.sección_estudios_info .año{
+    font-weight: var(--bold);
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+
+
+.header{
+background-image: url(../imagen/prueba.png);
+background-size: cover;
+height: 80px;
+border-radius: 0 0 20px 20px;
+display: flex;
+align-items: center;
+padding: 0 20px;
+position: relative;
+z-index: 2;
+grid-column: 1/4;
+
+}
+.header_a {
+    font-size: 20px;
+    color: var(--color-blanco);
+   font-weight: var(--bold);
+   align-content: center;
+   justify-content: space-between;
+   transition: all .2s ease-in-out;
+}
+
+.header_a :hover {
+    color: var(--color-contraste-oscuro);
+    transform: scale(.9);
+}
+
+
+/*Celular------ red social-------------------------------*/
+.redsocial{
+    position:fixed;
+    bottom:.6rem;
+    left:2%;
+    top: 250px ;
+    z-index: 2000px;
+    justify-content:center;
+    align-items: center;
+
+    
+}
+
+.redsocial_iconos{
+    background-color: var(--color-principal-medio);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 4rem;
+    padding: 1.6rem;
+    width: 48%;
+    border-radius: 1.2rem;
+    box-shadow: 3px 5px 20px;
+   
+}
+
+.redsocial_iconos a ,i{
+color:var(--color-oscuro);
+font-size: 2.5rem;
+transition: .3s all ease-in-out;
+}
+.redsocial_iconos a :hover{
+    color:var(--color-principal);
+  transform: scale(1.4);
+}
+
+ 
+/*-------------------------------------------------------------*/
+    /*-------------- pantalla tablet-----764px a 1024px*/
+  @media screen and (min-width: 764px) {
+   
+    /*pagina1---------------------------*/
+
+.banner{
+height: 200px;
+padding:40px;
+border-radius: 0 0 30px 30px ;
+  }  
+  
+.banner_titulo h1 {
+font-size: 3rem;
+text-shadow: 3px 5px 15px black;
+    }
+   
+    
+.imagen_postulante{
+width: 45%;
+margin-left: 2px;
+border-radius: 10px;
+margin-top: -10px;
+    }
+.info_datos li {
+display: flex;
+align-items: right;
+margin-bottom: 10px;
+margin-left: 0px;
+      
+}
+.presentacióntitulo h2 {
+position: relative;
+justify-content: center;
+margin-left: 140px;
+margin-bottom: 10px;
+font-size: 30px;
+           
+}
+    
+.presentacióntitulo p{
+margin-right: 140px;
+margin-left: 140px;
+font-size: 17px;
+margin-top: 16px;
+text-align: justify;
+           
+}
+.sección_botones{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-gap: 10 px;
+min-height: 1rem;
+margin-top: 40px;
+}
+
+.redsocial{
+position:fixed;
+bottom:.6rem;
+left:4%;
+top: 250px ;
+z-index: 2000px;
+justify-content:center;
+align-items: center;
+        
+            
+}
+.redsocial_iconos{
+background-color: var(--color-principal-medio);
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+gap: 4rem;
+padding: 1.6rem;
+width: 48%;
+border-radius: 1.2rem;
+box-shadow: 3px 5px 20px;
+           
+}
+        
+.redsocial_iconos a ,i{
+color:var(--color-oscuro);
+font-size: 2.5rem;
+transition: .3s all ease-in-out;
+}
+.redsocial_iconos a :hover{
+color:var(--color-principal);
+transform: scale(1.4);
+}
+
+.header{
+height: 100px;}
+
+.header_a{
+font-size: 30px;
+color: var(--color-blanco);
+font-weight: var(--bold);
+align-content: center;
+justify-content: space-between;
+transition: all .2s ease-in-out;
+}
+.header_a :hover{
+color: var(--color-contraste-oscuro);
+transform: scale(.9);
+    }
+
+   
+ /*pagina2 tablet*/
+.habilidades {
+ grid-row: 2/4;
+ grid-column: 1/2;
+ padding: 50px 0px;
+margin-left: 60px;
+margin-top: 5px;
+align-items: right;
+font-size: 10px;  
+
+}
+
+.habilidades h2 {
+padding: 0 60px;}
+
+.habilidades i {
+padding: 0 60px;
+}
+
+.habilidades .barras .porcentaje {
+Position: relative;
+Width:50%;
+Height:10px;
+Background:rgb(231, 223, 223);
+   
+}
+.habilidades .barras .porcentaje div {
+Position: absolute;
+Top:0;
+Left: 0px;
+Height:100%;
+Background:#3614af;
+   
+}
+.habilidades .barras spam{
+font-size: 16px;
+font-weight: bold;
+position: flex;
+margin-left: px; 
+      
+}
+.habilidades .barras{
+Position:relative;
+Width:100%;
+Display:grid;
+grid-template-columns: 230px 1fr;
+Justify-content:left;
+
+padding: 0 60px; 
+margin-top: 30px;
+font-size: 15px;}
+
+.experiencia {
+    grid-row: 2/4;
+    grid-column: 2/3;
+    margin-bottom: 10px;
+    margin-top: 35px;
+    align-items: right;
+    font-size: 18px;
+    width: 300px;
+    height: 900px;
+    
+}
+
+.sección_experiencia_info td {
+padding: 0px 10px;
+margin-right: 10px;
+font-size: 15px;
+margin-bottom: 30px;
+text-align: left;
+
+  
+  }
+
+
+.experiencia i {
+font-size: 30px;
+margin-top:27px;
+}
+
+
+    
+.estudios {
+grid-row: 3/4;
+grid-column: 1/2;
+margin-left: 67px;
+}
+
+
+.estudio h2 {
+padding: 0 60px;
+}
+
+}
+
+  /*pantalla de escritorio 1024 a mas*/
+  @media screen and (min-width: 1024px) {
+
+/*pagina1 escritorio*/
+.pagina1 {
+    display: flex;
+}
+.banner {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 40px 40px 0px;
+    background-position: 80% 0;
+    padding: 4rem;
+}
+
+.banner_titulo h1{
+font-size: 4rem;
+}
+
+.banner_titulo h2{
+font-size: 3rem;}
+
+.miinformacion{
+display: grid;
+grid-template-rows: 500px;
+margin-left: 0px;
+margin-right: 5px;
+
+}
+.info_datos li  {
+ align-content: center;
+ align-items: center;
+ font-size: 30px;
+}
+    
+.imagen_postulante{
+    width: 90%;
+    margin-bottom: 100px;
+    margin-left: 25px;
+}
+
+
+.presentacióntitulo h2 {
+
+    margin-top: 100px;
+    display: flex;
+    font-size:45px;
+    width: 120%;
+}
+
+.presentacióntitulo p{
+    font-size: 27px;
+    display: grid;
+    margin-bottom: 90px;
+    width: 280%;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.sección_botones {
+    display: grid;
+    margin-top: 25%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 90px;
+    
+ 
+
+}
+.sección_botones p{
+        font-size: 25px;
+}
+
+        
+.sección_botones a {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+background-image: url(../imagen/fondo3.jpeg);
+margin: 0% 10% 5% 5%;
+padding: 3rem;
+border-radius: 15px;
+font-weight: 900;
+transition: .2 all ease-in-out;
+background-size: 100%;
+background-size: cover;
+
+        
+}
+.sección_botones a :hover{
+    color:var(--color-principal);
+    transform: scale(1.4);
+}
+.redsocial{
+    margin-top: 15%;
+    margin-left: -1%;
+    font-size: 80px;
+    ;
+}
+
+/*pagina2 escritorio*/
+.pagina2{
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 120px minmax(70px, 27vh) minmax(150px, 25vh) ;
+ 
+}
+
+.header{
+ 
+    height: 160px;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    position: relative;
+    z-index: 2;
+    grid-column: 1/13;
+    
+    }
+    .header_a{
+        font-size: 40px;
+    }
+.habilidades {
+grid-row: 2/3;
+grid-column: 1/3;
+padding: 27px 0px;
+margin-left: 150px;
+margin-top: 60px;
+align-items: right;
+}
+.experiencia {
+grid-row: 2/3;
+grid-column: 3/7;
+padding: 27px 0px;
+margin-bottom: 10px;
+margin-top: 60px;
+align-items: right;
+width: 600px;
+
+}
+.estudios {
+grid-row: 2/3;
+grid-column: 7/11;
+padding: 27PX 0px;
+margin-bottom: 10px;
+margin-top: 60px;
+align-items: right;
+width: 600px;
+}
+    
+.experiencia h2 {
+    font-size: 40px;
+
+  }
+.estudios h2 {
+    font-size: 40px;
+}
+.habilidades h2{
+    font-size: 40px;
+}
+.estudios i {
+    font-size: 40px;
+    margin-top: 10px;
+}
+.habilidades i {
+    font-size: 40px;
+    margin-top: 10px;
+}
+.experiencia i {
+    font-size: 40px;
+    margin-top: 10px;
+    
+}
+.habilidades .barras{
+    font-size: 28px; }
+
+.habilidades .barras spam{
+font-size: 28px;
+}
+
+.habilidades .barras .porcentaje {
+    Position: relative;
+    Width:100%;
+    Height:20px;
+  }
+
+.sección_experiencia_info td {
+padding: 0px 10px;
+ margin-right: 0px;
+margin-left: auto;
+font-size: 23px;
+text-align: left;
+      
+}
+.sección_estudios_info td {
+    font-size: 23px;
+}
+  }
