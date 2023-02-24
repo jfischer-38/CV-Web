@@ -48,8 +48,6 @@ list-style: none;
 
 /**estilos*/
 
-
-
 *{
     margin: 0;
     padding: 0;
@@ -61,7 +59,6 @@ list-style: none;
 /**spantalla celular 0px a 764px- SLIDER*/
 
 
-
 .Container{
     
     display: grid;
@@ -69,6 +66,7 @@ list-style: none;
     position: relative;
     width: 100vw;
     overflow: hidden;
+   
  
 
 }
@@ -109,9 +107,9 @@ list-style: none;
 
 /*celular-------  pagina 1 diseño----------------------------*/
 
-  
+
 .banner{
-    height: 200px;
+    height: 10em;
     padding: 20px;
     border-radius: 0 0 20 px 20 px;
     background-image: url(../imagen/fondo3.jpeg);
@@ -155,19 +153,20 @@ list-style: none;
     margin-bottom: 10px;
     margin-left: 60px;
     align-content: right;
-    align-items: center ;    
+    align-items: center ;  
+    font-size: .6em;  
 }
 
 
 
 .info_datos i {
-    font-size: 35px;
+    font-size: 16px;
     margin-right: 20px;
     justify-content: center;
    
 }
 .info_datos{
-    margin-left: 100px;}
+    margin-left: 40px;}
 
 .imagen_postulante{
     width: 45%;
@@ -177,26 +176,24 @@ list-style: none;
     background-image: url(../imagen/fondo1.jpeg);
     background-size: cover;
 }
-
-
-
 .presentacióntitulo h2 {
     position: relative;
     justify-content: center;
-    margin-left: 140px;
+    margin-left: 80px;
     margin-bottom: 10px;
-    font-size: 30px;
- 
-;
+    font-size: 1.3em;
+
 }
 
 .presentacióntitulo p{
-        
-    margin-right: 140px;
-    margin-left: 140px;
-    font-size: 20px;
+    
+   
+    margin-right: 10px;
+    margin-left: 80px;
+    font-size: 1rem;
     margin-top: 18px;
-    text-align: justify;
+    text-align: left;
+    justify-self: center;
        
 }
 .sección_botones{
@@ -204,20 +201,23 @@ list-style: none;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 10 px;
     min-height: 1rem;
+    margin-left: 5em;
+    margin-top: 9px;
+    align-items: center;
+    justify-content: center;
  }
  .sección_botones p {
-    font-size: 19px;
+    font-size:12px;
     align-items: center;
     justify-content: center;
     margin-top: 9px;
- 
  }
         
 .sección_botones a {
 display: flex;
 justify-content: center;
 align-items: center;
-gap: 2rem;
+gap: .5rem;
 background-image: url(../imagen/fondo3.jpeg);
 margin: 4% 20% 5% 10%;
 padding: .2rem;
@@ -229,13 +229,13 @@ background-size: 100%;
 background-size: cover;
         
 }
+.sección_botones i {
+    font-size: 16px;}
+
 .sección_botones :hover {
 
     transform: scale(1.2);
 }
-
-
-
 
   /*Celular------pagina 2-------------------------------------*/
 
@@ -244,10 +244,12 @@ background-size: cover;
     grid-row: 2/4;
     grid-column: 2/3;
     padding: 27px 0;
-    margin-bottom: 10px;
+    margin-bottom: 10rem;
     margin-top: 35px;
     align-items: right;
     font-size: 17px;
+    
+   
  
 }
 .experiencia h2 {
@@ -264,10 +266,12 @@ background-size: cover;
 .sección_experiencia_info td {
     padding: 0px 10px;
     margin-right: 10px;
-    margin-left: auto;
+   
     font-size: 15.5px;
         
 }
+
+
 
 .sección_experiencia_info td:first-child{
     width: 125px;}
@@ -429,45 +433,55 @@ grid-column: 1/4;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 4rem;
+    gap: 1rem;
     padding: 1.6rem;
-    width: 48%;
+    width: 10%;
     border-radius: 1.2rem;
     box-shadow: 3px 5px 20px;
    
 }
 
-.redsocial_iconos a ,i{
+.redsocial_iconos a {
 color:var(--color-oscuro);
-font-size: 2.5rem;
+font-size: 1.2rem;
 transition: .3s all ease-in-out;
 }
+.redsocial_iconos i{
+    color:var(--color-oscuro);
+    font-size: 1.5rem;
+    transition: .3s all ease-in-out;
+    }
 .redsocial_iconos a :hover{
     color:var(--color-principal);
   transform: scale(1.4);
 }
 
- 
+
 /*-------------------------------------------------------------*/
-    /*-------------- pantalla tablet-----764px a 1024px*/
-  @media screen and (min-width: 764px) {
+
+
+
+    /*-------------- pantalla tablet-----*/
+  @media screen and (min-width: 764px) and (max-width: 1050px) {
    
     /*pagina1---------------------------*/
 
+
 .banner{
-height: 200px;
-padding:40px;
+height: 15%;
+padding:20px;
 border-radius: 0 0 30px 30px ;
   }  
   
 .banner_titulo h1 {
-font-size: 3rem;
+font-size: 2rem;
 text-shadow: 3px 5px 15px black;
-    }
-   
+}
+
+ 
     
 .imagen_postulante{
-width: 45%;
+width: 30%;
 margin-left: 2px;
 border-radius: 10px;
 margin-top: -10px;
@@ -477,36 +491,52 @@ display: flex;
 align-items: right;
 margin-bottom: 10px;
 margin-left: 0px;
+font-size: 1rem;
       
 }
+.info_datos i {
+    font-size: 1.4rem;}
+
 .presentacióntitulo h2 {
 position: relative;
 justify-content: center;
 margin-left: 140px;
 margin-bottom: 10px;
-font-size: 30px;
+font-size: 2rem;
            
 }
     
 .presentacióntitulo p{
 margin-right: 140px;
 margin-left: 140px;
-font-size: 17px;
+font-size: 1rem;
 margin-top: 16px;
 text-align: justify;
+flex-direction: column;
            
 }
 .sección_botones{
+
 display: grid;
 grid-template-columns: repeat(2,1fr);
-grid-gap: 10 px;
-min-height: 1rem;
-margin-top: 40px;
+grid-gap: 10 rem;
+min-height: 2rem;
+margin-top: 3rem;
+margin-top: 10px;
+}
+.sección_botones p{
+    font-size: 1rem;
+    text-align: center;
+    justify-content: center;
+}
+        
+.sección_botones a {
+    margin-top: 1%;
 }
 
-.redsocial{
+.redsocial {
 position:fixed;
-bottom:.6rem;
+bottom:0.6rem;
 left:4%;
 top: 250px ;
 z-index: 2000px;
@@ -520,7 +550,7 @@ background-color: var(--color-principal-medio);
 display: flex;
 justify-content: space-evenly;
 align-items: center;
-gap: 4rem;
+gap: 5rem;
 padding: 1.6rem;
 width: 48%;
 border-radius: 1.2rem;
@@ -528,10 +558,11 @@ box-shadow: 3px 5px 20px;
            
 }
         
-.redsocial_iconos a ,i{
+.redsocial_iconos a i{
 color:var(--color-oscuro);
-font-size: 2.5rem;
+font-size: 2.8rem;
 transition: .3s all ease-in-out;
+
 }
 .redsocial_iconos a :hover{
 color:var(--color-principal);
@@ -603,13 +634,13 @@ Display:grid;
 grid-template-columns: 230px 1fr;
 Justify-content:left;
 
-padding: 0 60px; 
+
 margin-top: 30px;
 font-size: 15px;}
 
 .experiencia {
     grid-row: 2/4;
-    grid-column: 2/3;
+    grid-column: 2/4;
     margin-bottom: 10px;
     margin-top: 35px;
     align-items: right;
@@ -651,70 +682,84 @@ padding: 0 60px;
 }
 
   /*pantalla de escritorio 1024 a mas*/
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1051px) {
 
 /*pagina1 escritorio*/
 .pagina1 {
-    display: flex;
+    display: grid;
+  
+    
 }
 .banner {
     width: 100%;
-    height: 100%;
-    border-radius: 0 40px 40px 0px;
+    height: 40%;
+    border-radius: 0px 0px 40px 40px;
     background-position: 80% 0;
-    padding: 4rem;
+    padding: .1rem;
 }
 
 .banner_titulo h1{
 font-size: 4rem;
+margin-left: 3rem;
 }
 
 .banner_titulo h2{
-font-size: 3rem;}
+font-size: 3rem;
+margin-left: 3rem;}
 
 .miinformacion{
-display: grid;
-grid-template-rows: 500px;
-margin-left: 0px;
-margin-right: 5px;
+font-size: 20rem;
+margin-top: -18rem;
+width: 40%;
+margin-left: 10%;
+
+
 
 }
 .info_datos li  {
- align-content: center;
- align-items: center;
- font-size: 30px;
+ align-content: left;
+ align-items: left;
+ font-size: 20px;
 }
     
 .imagen_postulante{
-    width: 90%;
-    margin-bottom: 100px;
-    margin-left: 25px;
+    width: 45%;
+    margin-bottom: 1rem;
+    margin-left: 6rem;
 }
 
 
 .presentacióntitulo h2 {
+    position: relative;
+    justify-content: center;
 
     margin-top: 100px;
-    display: flex;
-    font-size:45px;
+   
+    font-size:4 rem;
     width: 120%;
 }
 
 .presentacióntitulo p{
-    font-size: 27px;
-    display: grid;
+    font-size: 1.5rem;
+  
     margin-bottom: 90px;
-    width: 280%;
-    margin-left: 30px;
-    margin-right: 10px;
+    margin-left: 4rem;
+    margin-right: 3em;
+    padding: 2rem;
+    overflow:scroll; 
+    width:60%;
+ 
 }
+
 
 .sección_botones {
     display: grid;
-    margin-top: 25%;
+    
     justify-content: center;
     align-items: center;
-    margin-right: 90px;
+    margin-right: 90rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: repeat(2, 1fr);
     
  
 
@@ -756,7 +801,8 @@ background-size: cover;
 
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 120px minmax(70px, 27vh) minmax(150px, 25vh) ;
+    grid-template-rows: 120px minmax(70px, 73vh) minmax(150px, 61vh) ;
+    ;
  
 }
 
