@@ -72,16 +72,12 @@ list-style: none;
 .pagina1, .pagina2 {
     width:100%
     
-    
-    
-
 }
 
 .pagina1{
     overflow: hidden;
-   width: 200%;
+    width: 200%;
     background-color: var(--color-blanco);
-
 
 }
 
@@ -98,10 +94,7 @@ list-style: none;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 80px 80px 80px 80px ;
- 
     grid: 20px;
-    
-
 }
 .mover{
     left:0%;
@@ -110,7 +103,6 @@ list-style: none;
 }
 
 /*-------  pagina 1 diseño----------------------------*/
-
 
 .banner{
     height: 10em;
@@ -122,24 +114,19 @@ list-style: none;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     width:100%;
-
-
-    
+ 
 }
 .banner_titulo h1{
     font-size: 2.5rem;
     color:var(--color-blanco);
     text-shadow: 4px 8px 18px black;
     
-
-   
 }
 .banner_titulo h2{
     font-size: 2rem;
     font-weight: var(--normal);
     text-shadow: 3px 5px 15px black;
   
-
 }
 .miinformacion {
     
@@ -152,7 +139,6 @@ list-style: none;
     opacity: .9;
     margin-right: 40px;
     margin-left: 40px;
-  
 }
 
 .info_datos li  {
@@ -163,15 +149,12 @@ list-style: none;
     align-content: right;
     align-items: center ;  
     font-size: rem;  
-    ;
 }
-
 
 .info_datos i {
     font-size: 2rem;
     margin-right: 20px;
     justify-content: center;
-   
 }
 .info_datos{
     margin-left: 40px;
@@ -185,25 +168,24 @@ list-style: none;
     background-image: url(../imagen/fondo1.jpeg);
     background-size: cover;
 }
+
 .presentacióntitulo h2 {
     position: relative;
     justify-content: center;
     margin-left:4em;
     margin-bottom: 10px;
     font-size: 2em;
-
 }
-
 .presentacióntitulo p{
     margin-right: 2em;
     margin-left: 4em;
     font-size: 1.5rem;
     margin-top: 18px;
     text-align: left;
-    justify-self: center;
-    
-       
+    justify-self: center; 
 }
+
+
 .sección_botones{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -214,35 +196,33 @@ list-style: none;
     align-items: center;
     justify-content: center;
   
- }
+}
  .sección_botones p {
     font-size:1.6em;
     align-items: center;
     justify-content: center;
-  
- }
+}
         
 .sección_botones a {
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 1rem;
-background-image: url(../imagen/fondo3.jpeg);
-margin: 4% 20% 5% 10%;
-padding: .2rem;
-border-radius: 15px;
-font-size: .9rem;
-font-weight: 900;
-transition: .2 all ease-in-out;
-background-size: 100%;
-background-size: cover;
-        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-image: url(../imagen/fondo3.jpeg);
+    margin: 4% 20% 5% 10%;
+    padding: .2rem;
+    border-radius: 15px;
+    font-size: .9rem;
+    font-weight: 900;
+    transition: .2 all ease-in-out;
+    background-size: 100%;
+    background-size: cover;
+            
 }
 .sección_botones i {
     font-size: 16px;}
 
 .sección_botones :hover {
-
     transform: scale(1.2);
 }
 
@@ -405,17 +385,16 @@ background-size: cover;
 
 
 .header{
-background-image: url(../imagen/prueba.png);
-background-size: cover;
-height: 80px;
-border-radius: 0 0 20px 20px;
-display: flex;
-align-items: center;
-padding: 0 20px;
-position: relative;
-z-index: 2;
-grid-column: 1/13;
-
+    background-image: url(../imagen/prueba.png);
+    background-size: cover;
+    height: 80px;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+    grid-column: 1/13;
 }
 .header_a {
     font-size: 20px;
@@ -457,9 +436,9 @@ grid-column: 1/13;
 }
 
 .redsocial_iconos a {
-color:var(--color-oscuro);
-font-size: 2rem;
-transition: .3s all ease-in-out;
+    color:var(--color-oscuro);
+    font-size: 2rem;
+    transition: .3s all ease-in-out;
 }
 .redsocial_iconos i{
     color:var(--color-oscuro);
@@ -468,7 +447,7 @@ transition: .3s all ease-in-out;
     }
 .redsocial_iconos a :hover{
     color:var(--color-principal);
-  transform: scale(1.4);
+    transform: scale(1.4);
 }
 
 
@@ -487,30 +466,31 @@ transition: .3s all ease-in-out;
     padding:20px;
     border-radius: 0 0 30px 30px ;
     }  
-    
     .banner_titulo h1 {
     font-size: 2rem;
     text-shadow: 3px 5px 15px black;
     }
 
-    
-        
+            
     .imagen_postulante{
     width: 30%;
     margin-left: 2px;
     border-radius: 10px;
     margin-top: -10px;
-        }
+    }
+
+
     .info_datos li {
     display: flex;
     align-items: right;
     margin-bottom: 10px;
     margin-left: 0px;
     font-size: 1rem;
-        
     }
     .info_datos i {
-        font-size: 1.4rem;}
+        font-size: 1.4rem;
+    }
+
 
     .presentacióntitulo h2 {
     position: relative;
@@ -518,9 +498,7 @@ transition: .3s all ease-in-out;
     margin-left: 140px;
     margin-bottom: 10px;
     font-size: 2rem;
-            
-    }
-        
+    }   
     .presentacióntitulo p{
     margin-right: 140px;
     margin-left: 140px;
@@ -528,27 +506,27 @@ transition: .3s all ease-in-out;
     margin-top: 16px;
     text-align: justify;
     flex-direction: column;
-            
     }
-    .sección_botones{
 
+    
+    .sección_botones{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 10 rem;
     min-height: 2rem;
     margin-top: 3rem;
-   
     width: 80%;
     }
     .sección_botones p{
-        font-size: 1rem;
-        text-align: center;
-        justify-content: center;
+    font-size: 1rem;
+    text-align: center;
+    justify-content: center;
     }
             
     .sección_botones a {
-        margin-top: 1%;
+    margin-top: 1%;
     }
+
 
     .redsocial {
     position:fixed;
@@ -557,9 +535,7 @@ transition: .3s all ease-in-out;
     top: 250px ;
     z-index: 2000px;
     justify-content:center;
-    align-items: center;
-            
-                
+    align-items: center;              
     }
     .redsocial_iconos{
     background-color: var(--color-principal-medio);
@@ -571,23 +547,21 @@ transition: .3s all ease-in-out;
     width: 48%;
     border-radius: 1.2rem;
     box-shadow: 3px 5px 20px;
-            
     }
-            
     .redsocial_iconos a i{
     color:var(--color-oscuro);
     font-size: 2.8rem;
     transition: .3s all ease-in-out;
-
     }
     .redsocial_iconos a :hover{
     color:var(--color-principal);
     transform: scale(1.4);
     }
 
-    .header{
-    height: 100px;}
 
+    .header{
+    height: 100px;
+    }
     .header_a{
     font-size: 30px;
     color: var(--color-blanco);
@@ -599,35 +573,37 @@ transition: .3s all ease-in-out;
     .header_a :hover{
     color: var(--color-contraste-oscuro);
     transform: scale(.9);
-        }
+    }
 
 
    
  /*pagina2 tablet*/
- .habilidades {
+    .habilidades {
     margin-left: 20%;
- }
-
+     }
     .habilidades .barras .porcentaje {
     Position: relative;
-    Width:50%;}
-
+    Width:50%;
+    }
     .habilidades h5 {
-        font-size: 12px;}
-
+        font-size: 12px;
+    }
     .habilidades .barras {
             Position:relative;
             Display:grid;
-            grid-template-columns: 210px 1fr;}
+            grid-template-columns: 210px 1fr;
+    }
 
             
- .estudios {
+    .estudios {
     grid-row: 3/4;
     grid-column: 1/2;
     margin-top: 400px;
     margin-left: 20%;
     width: 100%;
    }
+
+
    .sección_experiencia i{
     margin-left: 30px;
    }
@@ -637,26 +613,22 @@ transition: .3s all ease-in-out;
    .sección_experiencia_info {
     margin-left: 30px;
    }
-.sección_experiencia_info td {
+    .sección_experiencia_info td {
     padding: 0px 20px;
-   
     font-size: 12px;
-        
-}
-
-.sección_experiencia_info td:first-child{
-    width: 125px;}
-
-
-.sección_experiencia_info .año {
+    }
+    .sección_experiencia_info td:first-child{
+    width: 125px;
+    }
+    .sección_experiencia_info .año {
     font-weight: var(--bold);
     font-size: 10px;
     padding-right: 30px;
-}
+    }
 
 
 /*------ red social-------------------------------*/
-.redsocial{
+    .redsocial{
     position:fixed;
     bottom:.1rem;
     left:2%;
@@ -664,200 +636,181 @@ transition: .3s all ease-in-out;
     z-index: 200px;
     justify-content:center;
     align-items: center;
-}
-
-.redsocial_iconos a i {
-  
+    }
+    .redsocial_iconos a i {
     font-size: 1.7rem;
-   
     padding: .5rem;
     width: 70%;
     border-radius: 1.2rem;
-  
     }
     .redsocial_iconos{
-       
-        padding: .9rem;
-     
-}
+    padding: .9rem;
+    }
   }
 
   /*****celular -------*/
   /*pantalla de celular 430 */
   @media screen and (max-width: 430px)  {
 
-
-
     .redsocial_iconos a i {
-  
         font-size: 1.5rem;
         padding: .5rem 1rem;
         width: 20%;
         border-radius: 1.2rem;
-      
-        }
-    .redsocial_iconos{
-       
-            padding: .4rem;
-         
     }
+    .redsocial_iconos{
+        padding: .4rem;
+    }
+
+
     .sección_botones {
         width: 100%;
         margin-left: 40px;
         width: 90%;
-     
     }
+
+
        .banner {
-    height: 12%;
+        height: 12%;
     }
+
+
     .imagen_postulante{
-    width: 50%;
+        width: 50%;
+    }
 
-  }
     .info_datos li  {
-    font-size: 10px;}
-
+        font-size: 10px;
+    }
     .info_datos i {
         font-size: 15px;
-
     }
+
     .miinformacion {
-        margin-left: 4rem;}
+        margin-left: 4rem;
+    }
     
+
     .presentacióntitulo h2 {
-    font-size: 1em;
-        
-        }
+        font-size: 1em;
+    }
     .presentacióntitulo p {
             
-     font-size: 16px;
-    margin-left: 70px;
-    align-content: right;
-    margin-right: 20px;
-        }
+        font-size: 16px;
+        margin-left: 70px;
+        align-content: right;
+        margin-right: 20px;
+    }
+
+
         /*pagina2*/
-       .pagina2 {
+    .pagina2 {
         width: 100%;
-       }
+    }
              
-        .habilidades h2 {
+    .habilidades h2 {
         font-size: 20px;
         margin-left: 120px;
-        }
-        .habilidades i {
-            font-size: 20px;
-            margin-left: 130px;
-            }
+    }
+    .habilidades i {
+        font-size: 20px;
+        margin-left: 130px;
+    }
               
-           .habilidades{
-            margin-top: 10px;
-           } 
-        .habilidades .barras {
-                Position:relative;
-                Display:grid;
-                grid-template-columns: 120px 1fr;
-                Justify-content:left;
-                align-items: right;
-                padding: 0 140px; 
-                margin-top: 0.8rem;
-                font-size: 1.3rem;
-                
-                
-            
-            }
-        .habilidades .barras spam{
-             font-size: .6rem;
-             font-weight: bold; 
-             margin-right: 6px;
-               
-            }
-            .habilidades .barras .porcentaje {
-                Position: relative;
-                Width:90%;}
+    .habilidades{
+        margin-top: 10px;
+    } 
+    .habilidades .barras {
+        Position:relative;
+        Display:grid;
+        grid-template-columns: 120px 1fr;
+        Justify-content:left;
+        align-items: right;
+        padding: 0 140px; 
+        margin-top: 0.8rem;
+        font-size: 1.3rem;
+    }
+    .habilidades .barras spam{
+        font-size: .6rem;
+        font-weight: bold; 
+        margin-right: 6px;
+    }
+    .habilidades .barras .porcentaje {
+        Position: relative;
+        Width:90%;
+    }
            
         
         
         /*seccion experiencia*/
-        .experiencia {
-            grid-row: 2/4;
-            grid-column:1/8 ;
-            margin-left: 15px;
-            margin-top: 10px;
-            
-            
-        }
-        .experiencia h2 {
-            font-size: 20px;
-            margin-left: 50px;
-           
-           }
+    .experiencia {
+        grid-row: 2/4;
+        grid-column:1/8 ;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    .experiencia h2 {
+        font-size: 20px;
+        margin-left: 50px;
+    }
         
-        .experiencia i {
-            font-size: 20px;
-            margin-left: 50px;
-        
-            
-           }
-        .sección_experiencia_info td {
-            padding: 0px 10px;
-            font-size: 10px;
-                  
-        }
-       .sección_experiencia_info .año{
-            font-weight: var(--bold);
-            font-size: 9px;
-            padding-left: 30px;
-            
-        }
-        .sección_experiencia_info {
-            margin-left: 10px;
-        }
+    .experiencia i {
+        font-size: 20px;
+        margin-left: 50px;
+    }
+    .sección_experiencia_info td {
+        padding: 0px 10px;
+        font-size: 10px;
+    }
+    .sección_experiencia_info .año{
+        font-weight: var(--bold);
+        font-size: 9px;
+        padding-left: 30px;
+    }
+    .sección_experiencia_info {
+        margin-left: 10px;
+    }
         
         /***educaccion*/
        
-        .estudios h2 {
-            font-size: 20px;
-            margin-left: 0px;
-            
-           
-           }
+    .estudios h2 {
+        font-size: 20px;
+        margin-left: 0px;
+    }
         
-        .estudios i {
-            font-size: 20px;
-            margin-left: 0px;}
+    .estudios i {
+        font-size: 20px;
+        margin-left: 0px;
+    }
         
-        .estudios {
-            grid-row: 3/4;
-            grid-column: 1/12;
-            padding: 590px 0px;
-            margin-top: 0px;
-            align-items: right;
-            margin-left: 60px;
-           
-        }
+    .estudios {
+        grid-row: 3/4;
+        grid-column: 1/12;
+        padding: 590px 0px;
+        margin-top: 0px;
+        align-items: right;
+        margin-left: 60px;           
+    }
         
-           .sección_estudios_info td {
-            padding: 1px 20px 0px;
-            margin-right: 10px;
-            margin-left: 15px;
-            font-size: 10px;
-          
-           
-           }
+    .sección_estudios_info td {
+        padding: 1px 20px 0px;
+        margin-right: 10px;
+        margin-left: 15px;
+        font-size: 10px;
+     }
         
-        .sección_estudios_info .año{
-            font-weight: var(--bold);
-            font-size: 10px;
-            padding-right: 5px;
-        }
-        .header_a {
-            font-size: 15px;
-            }
-            .header {
-                height: 80%;
-
-            }   
-        }
+    .sección_estudios_info .año{
+        font-weight: var(--bold);
+        font-size: 10px;
+        padding-right: 5px;
+    }
+    .header_a {
+        font-size: 15px;
+    }
+    .header {
+        height: 80%;
+    }   
+}
 
 
 
