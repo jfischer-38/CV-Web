@@ -62,22 +62,24 @@ list-style: none;
 .Container{
     
     display: grid;
+    width: 100%;
+    overflow: hidden;
     grid-template-columns: 1fr 1fr;
     position: relative;
-    width: 100vw;
-    overflow: hidden;
-   
- 
+    height: 100%;
 
 }
 .pagina1, .pagina2 {
-    width: 100vw;
+    width:100%
+    
+    
+    
 
 }
 
 .pagina1{
     overflow: hidden;
-    min-height: 100vh;
+   width: 200%;
     background-color: var(--color-blanco);
 
 
@@ -88,15 +90,17 @@ list-style: none;
     background-size: cover;
     position: absolute;
     opacity: 1;
-    min-height: 100vh;
+    min-height: 100%;
     transition: .5s all ease-in-out;
     left:100%;
     pointer-events: none;
     /*celular y tablet*/
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 60px 500px ;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 80px 80px 80px 80px ;
+ 
     grid: 20px;
+    
 
 }
 .mover{
@@ -105,7 +109,7 @@ list-style: none;
     
 }
 
-/*celular-------  pagina 1 diseño----------------------------*/
+/*-------  pagina 1 diseño----------------------------*/
 
 
 .banner{
@@ -117,6 +121,8 @@ list-style: none;
     border-radius: 0 0 20px 20px;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
+    width:100%;
+
 
     
 }
@@ -124,6 +130,7 @@ list-style: none;
     font-size: 2.5rem;
     color:var(--color-blanco);
     text-shadow: 4px 8px 18px black;
+    
 
    
 }
@@ -131,6 +138,7 @@ list-style: none;
     font-size: 2rem;
     font-weight: var(--normal);
     text-shadow: 3px 5px 15px black;
+  
 
 }
 .miinformacion {
@@ -154,22 +162,23 @@ list-style: none;
     margin-left: 60px;
     align-content: right;
     align-items: center ;  
-    font-size: .6em;  
+    font-size: rem;  
+    ;
 }
 
 
-
 .info_datos i {
-    font-size: 16px;
+    font-size: 2rem;
     margin-right: 20px;
     justify-content: center;
    
 }
 .info_datos{
-    margin-left: 40px;}
+    margin-left: 40px;
+}
 
 .imagen_postulante{
-    width: 45%;
+    width: 30%;
     margin-left: 2px;
     border-radius: 10px;
     margin-top: -10px;
@@ -179,21 +188,20 @@ list-style: none;
 .presentacióntitulo h2 {
     position: relative;
     justify-content: center;
-    margin-left: 80px;
+    margin-left:4em;
     margin-bottom: 10px;
-    font-size: 1.3em;
+    font-size: 2em;
 
 }
 
 .presentacióntitulo p{
-    
-   
-    margin-right: 10px;
-    margin-left: 80px;
-    font-size: 1rem;
+    margin-right: 2em;
+    margin-left: 4em;
+    font-size: 1.5rem;
     margin-top: 18px;
     text-align: left;
     justify-self: center;
+    
        
 }
 .sección_botones{
@@ -202,22 +210,23 @@ list-style: none;
     grid-gap: 10 px;
     min-height: 1rem;
     margin-left: 5em;
-    margin-top: 9px;
+    margin-top: 20px;
     align-items: center;
     justify-content: center;
+  
  }
  .sección_botones p {
-    font-size:12px;
+    font-size:1.6em;
     align-items: center;
     justify-content: center;
-    margin-top: 9px;
+  
  }
         
 .sección_botones a {
 display: flex;
 justify-content: center;
 align-items: center;
-gap: .5rem;
+gap: 1rem;
 background-image: url(../imagen/fondo3.jpeg);
 margin: 4% 20% 5% 10%;
 padding: .2rem;
@@ -237,141 +246,149 @@ background-size: cover;
     transform: scale(1.2);
 }
 
-  /*Celular------pagina 2-------------------------------------*/
+  /*------pagina 2-------------------------------------*/
+
+/*barras habilidades*/
+.habilidades {
+    grid-row: 2/4;
+    grid-column: 1/4;
+    padding: 2px 0px;
+    margin-left: 10em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    align-items: right;
+  
+}
+
+ 
+    .habilidades h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    margin-top: 1rem;
+    }
+    .habilidades i {
+        font-size: 30px;
+    margin-left: 30px;
+
+    }
+    
+    .habilidades .barras {
+        Position:relative;
+        Display:grid;
+        grid-template-columns: 300px 1fr;
+        Justify-content:left;
+        align-items: right;
+        padding: 0 15px; 
+        margin-top: 0.8rem;
+        font-size: 1.3rem;
+        width: 100%;
+      
+    
+    }
+    .habilidades .barras spam{
+     font-size: 1.2rem;
+     font-weight: bold; 
+       
+    }
+    
+    .habilidades .barras .porcentaje {
+        Position: relative;
+        Width:70%;
+        Height:10px;
+        Background:rgb(231, 223, 223);
+       margin-top: .5rem;
+    }
+    .habilidades .barras .porcentaje div {
+        Position: absolute;
+        Top:0;
+        Left: 0px;
+        Height:100%;
+        Background:#3614af;
+       
+    }
+
 
 /*seccion experiencia*/
 .experiencia {
     grid-row: 2/4;
-    grid-column: 2/3;
-    padding: 27px 0;
+    grid-column:3/8 ;
+    padding: 2px 0;
     margin-bottom: 10rem;
-    margin-top: 35px;
+    margin-top: 30px;
     align-items: right;
     font-size: 17px;
     
-   
- 
 }
 .experiencia h2 {
     font-size: 30px;
-    margin-top: 10px;
+    margin-top: 1rem;
     text-transform: uppercase;
    }
 
 .experiencia i{
     font-size: 30px;
-    margin-top: 10px;
+    margin-left: 30px;
+
     
    }
 .sección_experiencia_info td {
     padding: 0px 10px;
-    margin-right: 10px;
-   
+    margin-right: 10px;   
     font-size: 15.5px;
-        
+          
 }
 
-
-
 .sección_experiencia_info td:first-child{
-    width: 125px;}
+    width: 125px;
+}
 
 
 .sección_experiencia_info .año{
     font-weight: var(--bold);
     font-size: 15px;
-    padding-right: 10px;
-}
-
-
-/*barras habilidades*/
-.habilidades {
-grid-row: 2/4;
-grid-column: 1/2;
-padding: 27px 0px;
-margin-left: 80px;
-margin-top: 35px;
-align-items: right;
-font-size: 17px;
-
-}
-.habilidades h2 {
-    font-size: 30px;
-    margin-top: 10px;
-    text-transform: uppercase;
-    padding: 0 100px;
-}
-.habilidades i {
-    padding: 0 100px;
-    font-size: 30px;
-    margin-top: 10px;
-   }
-
-
-.habilidades .barras{
-    Position:relative;
-    Width:100%;
-    Display:grid;
-    grid-template-columns: 300px 1fr;
-    Justify-content:left;
-    align-items: right;
-    padding: 0 90px; 
-    margin-top: 30px;
-    font-size: 20px;
-
-}
-.habilidades .barras spam{
- font-size: 20px;
- font-weight: bold; 
-   
-}
-
-.habilidades .barras .porcentaje {
-    Position: relative;
-    Width:100%;
-    Height:10px;
-    Background:rgb(231, 223, 223);
-   
-}
-.habilidades .barras .porcentaje div {
-    Position: absolute;
-    Top:0;
-    Left: 0px;
-    Height:100%;
-    Background:#3614af;
-   
-}
-
+    padding-right: 30px;
     
+}
+.sección_experiencia_info {
+    margin-left: 10px;
+}
+
 /***educaccion*/
+
 .estudios {
     grid-row: 2/4;
-    grid-column: 3/4;
-    padding: 27px 0px;
+    grid-column: 8/12;
+    padding: 2px 0px;
     margin-bottom: 10px;
-    margin-top: 35px;
+    padding: 2px 0px;
+    margin-top: 30px;
     align-items: right;
-    
+    margin-left: 2rem;
+   
 }
+
+
 .estudios h2  {
     font-size: 30px;
-    margin-top: 10px;
     text-transform: uppercase;
     margin-left: 30px;
-    
+    margin-top: 1rem;
      
+
 }
 .estudios i {
     font-size: 30px;
-    margin-top: 10px;
     margin-left: 30px;
     
-}
+       }
+    
+
 .sección_estudios_info td {
     padding: 15px 20px 0px;
     margin-right: 10px;
     margin-left: 80px;
-    font-size: 17px;
+    font-size: 14px;
    }
 
 .sección_estudios_info td:first-child{
@@ -397,7 +414,7 @@ align-items: center;
 padding: 0 20px;
 position: relative;
 z-index: 2;
-grid-column: 1/4;
+grid-column: 1/13;
 
 }
 .header_a {
@@ -415,7 +432,7 @@ grid-column: 1/4;
 }
 
 
-/*Celular------ red social-------------------------------*/
+/*------ red social-------------------------------*/
 .redsocial{
     position:fixed;
     bottom:.6rem;
@@ -424,8 +441,6 @@ grid-column: 1/4;
     z-index: 2000px;
     justify-content:center;
     align-items: center;
-
-    
 }
 
 .redsocial_iconos{
@@ -434,8 +449,8 @@ grid-column: 1/4;
     justify-content: space-evenly;
     align-items: center;
     gap: 1rem;
-    padding: 1.6rem;
-    width: 10%;
+    padding: 1rem;
+    width: 70%;
     border-radius: 1.2rem;
     box-shadow: 3px 5px 20px;
    
@@ -443,12 +458,12 @@ grid-column: 1/4;
 
 .redsocial_iconos a {
 color:var(--color-oscuro);
-font-size: 1.2rem;
+font-size: 2rem;
 transition: .3s all ease-in-out;
 }
 .redsocial_iconos i{
     color:var(--color-oscuro);
-    font-size: 1.5rem;
+    font-size: 2rem;
     transition: .3s all ease-in-out;
     }
 .redsocial_iconos a :hover{
@@ -462,438 +477,393 @@ transition: .3s all ease-in-out;
 
 
     /*-------------- pantalla tablet-----*/
-  @media screen and (min-width: 764px) and (max-width: 1050px) {
+  @media screen and (max-width: 764px){
    
-    /*pagina1---------------------------*/
+    /*pagina1--------------------------*/
 
 
-.banner{
-height: 15%;
-padding:20px;
-border-radius: 0 0 30px 30px ;
-  }  
-  
-.banner_titulo h1 {
-font-size: 2rem;
-text-shadow: 3px 5px 15px black;
-}
-
- 
+    .banner{
+    height: 15%;
+    padding:20px;
+    border-radius: 0 0 30px 30px ;
+    }  
     
-.imagen_postulante{
-width: 30%;
-margin-left: 2px;
-border-radius: 10px;
-margin-top: -10px;
+    .banner_titulo h1 {
+    font-size: 2rem;
+    text-shadow: 3px 5px 15px black;
     }
-.info_datos li {
-display: flex;
-align-items: right;
-margin-bottom: 10px;
-margin-left: 0px;
-font-size: 1rem;
-      
-}
-.info_datos i {
-    font-size: 1.4rem;}
 
-.presentacióntitulo h2 {
-position: relative;
-justify-content: center;
-margin-left: 140px;
-margin-bottom: 10px;
-font-size: 2rem;
-           
-}
     
-.presentacióntitulo p{
-margin-right: 140px;
-margin-left: 140px;
-font-size: 1rem;
-margin-top: 16px;
-text-align: justify;
-flex-direction: column;
-           
-}
-.sección_botones{
-
-display: grid;
-grid-template-columns: repeat(2,1fr);
-grid-gap: 10 rem;
-min-height: 2rem;
-margin-top: 3rem;
-margin-top: 10px;
-}
-.sección_botones p{
+        
+    .imagen_postulante{
+    width: 30%;
+    margin-left: 2px;
+    border-radius: 10px;
+    margin-top: -10px;
+        }
+    .info_datos li {
+    display: flex;
+    align-items: right;
+    margin-bottom: 10px;
+    margin-left: 0px;
     font-size: 1rem;
-    text-align: center;
-    justify-content: center;
-}
         
-.sección_botones a {
-    margin-top: 1%;
-}
-
-.redsocial {
-position:fixed;
-bottom:0.6rem;
-left:4%;
-top: 250px ;
-z-index: 2000px;
-justify-content:center;
-align-items: center;
-        
-            
-}
-.redsocial_iconos{
-background-color: var(--color-principal-medio);
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-gap: 5rem;
-padding: 1.6rem;
-width: 48%;
-border-radius: 1.2rem;
-box-shadow: 3px 5px 20px;
-           
-}
-        
-.redsocial_iconos a i{
-color:var(--color-oscuro);
-font-size: 2.8rem;
-transition: .3s all ease-in-out;
-
-}
-.redsocial_iconos a :hover{
-color:var(--color-principal);
-transform: scale(1.4);
-}
-
-.header{
-height: 100px;}
-
-.header_a{
-font-size: 30px;
-color: var(--color-blanco);
-font-weight: var(--bold);
-align-content: center;
-justify-content: space-between;
-transition: all .2s ease-in-out;
-}
-.header_a :hover{
-color: var(--color-contraste-oscuro);
-transform: scale(.9);
     }
+    .info_datos i {
+        font-size: 1.4rem;}
+
+    .presentacióntitulo h2 {
+    position: relative;
+    justify-content: center;
+    margin-left: 140px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+            
+    }
+        
+    .presentacióntitulo p{
+    margin-right: 140px;
+    margin-left: 140px;
+    font-size: 1rem;
+    margin-top: 16px;
+    text-align: justify;
+    flex-direction: column;
+            
+    }
+    .sección_botones{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10 rem;
+    min-height: 2rem;
+    margin-top: 3rem;
+   
+    width: 80%;
+    }
+    .sección_botones p{
+        font-size: 1rem;
+        text-align: center;
+        justify-content: center;
+    }
+            
+    .sección_botones a {
+        margin-top: 1%;
+    }
+
+    .redsocial {
+    position:fixed;
+    bottom:0.6rem;
+    left:4%;
+    top: 250px ;
+    z-index: 2000px;
+    justify-content:center;
+    align-items: center;
+            
+                
+    }
+    .redsocial_iconos{
+    background-color: var(--color-principal-medio);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5rem;
+    padding: 1.6rem;
+    width: 48%;
+    border-radius: 1.2rem;
+    box-shadow: 3px 5px 20px;
+            
+    }
+            
+    .redsocial_iconos a i{
+    color:var(--color-oscuro);
+    font-size: 2.8rem;
+    transition: .3s all ease-in-out;
+
+    }
+    .redsocial_iconos a :hover{
+    color:var(--color-principal);
+    transform: scale(1.4);
+    }
+
+    .header{
+    height: 100px;}
+
+    .header_a{
+    font-size: 30px;
+    color: var(--color-blanco);
+    font-weight: var(--bold);
+    align-content: center;
+    justify-content: space-between;
+    transition: all .2s ease-in-out;
+    }
+    .header_a :hover{
+    color: var(--color-contraste-oscuro);
+    transform: scale(.9);
+        }
+
 
    
  /*pagina2 tablet*/
-.habilidades {
- grid-row: 2/4;
- grid-column: 1/2;
- padding: 50px 0px;
-margin-left: 60px;
-margin-top: 5px;
-align-items: right;
-font-size: 10px;  
+ .habilidades {
+    margin-left: 20%;
+ }
 
-}
-
-.habilidades h2 {
-padding: 0 60px;}
-
-.habilidades i {
-padding: 0 60px;
-}
-
-.habilidades .barras .porcentaje {
-Position: relative;
-Width:50%;
-Height:10px;
-Background:rgb(231, 223, 223);
-   
-}
-.habilidades .barras .porcentaje div {
-Position: absolute;
-Top:0;
-Left: 0px;
-Height:100%;
-Background:#3614af;
-   
-}
-.habilidades .barras spam{
-font-size: 16px;
-font-weight: bold;
-position: flex;
-margin-left: px; 
-      
-}
-.habilidades .barras{
-Position:relative;
-Width:100%;
-Display:grid;
-grid-template-columns: 230px 1fr;
-Justify-content:left;
-
-
-margin-top: 30px;
-font-size: 15px;}
-
-.experiencia {
-    grid-row: 2/4;
-    grid-column: 2/4;
-    margin-bottom: 10px;
-    margin-top: 35px;
-    align-items: right;
-    font-size: 18px;
-    width: 300px;
-    height: 900px;
-    
-}
-
-.sección_experiencia_info td {
-padding: 0px 10px;
-margin-right: 10px;
-font-size: 15px;
-margin-bottom: 30px;
-text-align: left;
-
-  
-  }
-
-
-.experiencia i {
-font-size: 30px;
-margin-top:27px;
-}
-
-
-    
-.estudios {
-grid-row: 3/4;
-grid-column: 1/2;
-margin-left: 67px;
-}
-
-
-.estudio h2 {
-padding: 0 60px;
-}
-
-}
-
-  /*pantalla de escritorio 1024 a mas*/
-  @media screen and (min-width: 1051px) {
-
-/*pagina1 escritorio*/
-.pagina1 {
-    display: grid;
-  
-    
-}
-.banner {
-    width: 100%;
-    height: 40%;
-    border-radius: 0px 0px 40px 40px;
-    background-position: 80% 0;
-    padding: .1rem;
-}
-
-.banner_titulo h1{
-font-size: 4rem;
-margin-left: 3rem;
-}
-
-.banner_titulo h2{
-font-size: 3rem;
-margin-left: 3rem;}
-
-.miinformacion{
-font-size: 20rem;
-margin-top: -18rem;
-width: 40%;
-margin-left: 10%;
-
-
-
-}
-.info_datos li  {
- align-content: left;
- align-items: left;
- font-size: 20px;
-}
-    
-.imagen_postulante{
-    width: 45%;
-    margin-bottom: 1rem;
-    margin-left: 6rem;
-}
-
-
-.presentacióntitulo h2 {
-    position: relative;
-    justify-content: center;
-
-    margin-top: 100px;
-   
-    font-size:4 rem;
-    width: 120%;
-}
-
-.presentacióntitulo p{
-    font-size: 1.5rem;
-  
-    margin-bottom: 90px;
-    margin-left: 4rem;
-    margin-right: 3em;
-    padding: 2rem;
-    overflow:scroll; 
-    width:60%;
- 
-}
-
-
-.sección_botones {
-    display: grid;
-    
-    justify-content: center;
-    align-items: center;
-    margin-right: 90rem;
-    grid-template-columns: repeat(2, 1fr);
-    grid-row: repeat(2, 1fr);
-    
- 
-
-}
-.sección_botones p{
-        font-size: 25px;
-}
-
-        
-.sección_botones a {
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 2rem;
-background-image: url(../imagen/fondo3.jpeg);
-margin: 0% 10% 5% 5%;
-padding: 3rem;
-border-radius: 15px;
-font-weight: 900;
-transition: .2 all ease-in-out;
-background-size: 100%;
-background-size: cover;
-
-        
-}
-.sección_botones a :hover{
-    color:var(--color-principal);
-    transform: scale(1.4);
-}
-.redsocial{
-    margin-top: 15%;
-    margin-left: -1%;
-    font-size: 80px;
-    ;
-}
-
-/*pagina2 escritorio*/
-.pagina2{
-
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 120px minmax(70px, 73vh) minmax(150px, 61vh) ;
-    ;
- 
-}
-
-.header{
- 
-    height: 160px;
-    border-radius: 0 0 20px 20px;
-    display: flex;
-    align-items: center;
-    padding: 0 60px;
-    position: relative;
-    z-index: 2;
-    grid-column: 1/13;
-    
-    }
-    .header_a{
-        font-size: 40px;
-    }
-.habilidades {
-grid-row: 2/3;
-grid-column: 1/3;
-padding: 27px 0px;
-margin-left: 150px;
-margin-top: 60px;
-align-items: right;
-}
-.experiencia {
-grid-row: 2/3;
-grid-column: 3/7;
-padding: 27px 0px;
-margin-bottom: 10px;
-margin-top: 60px;
-align-items: right;
-width: 600px;
-
-}
-.estudios {
-grid-row: 2/3;
-grid-column: 7/11;
-padding: 27PX 0px;
-margin-bottom: 10px;
-margin-top: 60px;
-align-items: right;
-width: 600px;
-}
-    
-.experiencia h2 {
-    font-size: 40px;
-
-  }
-.estudios h2 {
-    font-size: 40px;
-}
-.habilidades h2{
-    font-size: 40px;
-}
-.estudios i {
-    font-size: 40px;
-    margin-top: 10px;
-}
-.habilidades i {
-    font-size: 40px;
-    margin-top: 10px;
-}
-.experiencia i {
-    font-size: 40px;
-    margin-top: 10px;
-    
-}
-.habilidades .barras{
-    font-size: 28px; }
-
-.habilidades .barras spam{
-font-size: 28px;
-}
-
-.habilidades .barras .porcentaje {
+    .habilidades .barras .porcentaje {
     Position: relative;
-    Width:100%;
-    Height:20px;
+    Width:50%;}
+
+    .habilidades h5 {
+        font-size: 12px;}
+
+    .habilidades .barras {
+            Position:relative;
+            Display:grid;
+            grid-template-columns: 210px 1fr;}
+
+            
+ .estudios {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    margin-top: 400px;
+    margin-left: 20%;
+    width: 100%;
+   }
+   .sección_experiencia i{
+    margin-left: 30px;
+   }
+   .sección_experiencia h2{
+    margin-left: 30px;
+   }
+   .sección_experiencia_info {
+    margin-left: 30px;
+   }
+.sección_experiencia_info td {
+    padding: 0px 20px;
+   
+    font-size: 12px;
+        
+}
+
+.sección_experiencia_info td:first-child{
+    width: 125px;}
+
+
+.sección_experiencia_info .año {
+    font-weight: var(--bold);
+    font-size: 10px;
+    padding-right: 30px;
+}
+
+
+/*------ red social-------------------------------*/
+.redsocial{
+    position:fixed;
+    bottom:.1rem;
+    left:2%;
+    top: 250px ;
+    z-index: 200px;
+    justify-content:center;
+    align-items: center;
+}
+
+.redsocial_iconos a i {
+  
+    font-size: 1.7rem;
+   
+    padding: .5rem;
+    width: 70%;
+    border-radius: 1.2rem;
+  
+    }
+    .redsocial_iconos{
+       
+        padding: .9rem;
+     
+}
   }
 
-.sección_experiencia_info td {
-padding: 0px 10px;
- margin-right: 0px;
-margin-left: auto;
-font-size: 23px;
-text-align: left;
+  /*****celular -------*/
+  /*pantalla de celular 430 */
+  @media screen and (max-width: 430px)  {
+
+
+
+    .redsocial_iconos a i {
+  
+        font-size: 1.5rem;
+        padding: .5rem 1rem;
+        width: 20%;
+        border-radius: 1.2rem;
       
-}
-.sección_estudios_info td {
-    font-size: 23px;
-}
+        }
+    .redsocial_iconos{
+       
+            padding: .4rem;
+         
+    }
+    .sección_botones {
+        width: 100%;
+        margin-left: 40px;
+        width: 90%;
+     
+    }
+       .banner {
+    height: 12%;
+    }
+    .imagen_postulante{
+    width: 50%;
+
   }
+    .info_datos li  {
+    font-size: 10px;}
+
+    .info_datos i {
+        font-size: 15px;
+
+    }
+    .miinformacion {
+        margin-left: 4rem;}
+    
+    .presentacióntitulo h2 {
+    font-size: 1em;
+        
+        }
+    .presentacióntitulo p {
+            
+     font-size: 16px;
+    margin-left: 70px;
+    align-content: right;
+    margin-right: 20px;
+        }
+        /*pagina2*/
+       .pagina2 {
+        width: 100%;
+       }
+             
+        .habilidades h2 {
+        font-size: 20px;
+        margin-left: 120px;
+        }
+        .habilidades i {
+            font-size: 20px;
+            margin-left: 130px;
+            }
+              
+           .habilidades{
+            margin-top: 10px;
+           } 
+        .habilidades .barras {
+                Position:relative;
+                Display:grid;
+                grid-template-columns: 120px 1fr;
+                Justify-content:left;
+                align-items: right;
+                padding: 0 140px; 
+                margin-top: 0.8rem;
+                font-size: 1.3rem;
+                
+                
+            
+            }
+        .habilidades .barras spam{
+             font-size: .6rem;
+             font-weight: bold; 
+             margin-right: 6px;
+               
+            }
+            .habilidades .barras .porcentaje {
+                Position: relative;
+                Width:90%;}
+           
+        
+        
+        /*seccion experiencia*/
+        .experiencia {
+            grid-row: 2/4;
+            grid-column:1/8 ;
+            margin-left: 15px;
+            margin-top: 10px;
+            
+            
+        }
+        .experiencia h2 {
+            font-size: 20px;
+            margin-left: 50px;
+           
+           }
+        
+        .experiencia i {
+            font-size: 20px;
+            margin-left: 50px;
+        
+            
+           }
+        .sección_experiencia_info td {
+            padding: 0px 10px;
+            font-size: 10px;
+                  
+        }
+       .sección_experiencia_info .año{
+            font-weight: var(--bold);
+            font-size: 9px;
+            padding-left: 30px;
+            
+        }
+        .sección_experiencia_info {
+            margin-left: 10px;
+        }
+        
+        /***educaccion*/
+       
+        .estudios h2 {
+            font-size: 20px;
+            margin-left: 0px;
+            
+           
+           }
+        
+        .estudios i {
+            font-size: 20px;
+            margin-left: 0px;}
+        
+        .estudios {
+            grid-row: 3/4;
+            grid-column: 1/12;
+            padding: 590px 0px;
+            margin-top: 0px;
+            align-items: right;
+            margin-left: 60px;
+           
+        }
+        
+           .sección_estudios_info td {
+            padding: 1px 20px 0px;
+            margin-right: 10px;
+            margin-left: 15px;
+            font-size: 10px;
+          
+           
+           }
+        
+        .sección_estudios_info .año{
+            font-weight: var(--bold);
+            font-size: 10px;
+            padding-right: 5px;
+        }
+        .header_a {
+            font-size: 15px;
+            }
+            .header {
+                height: 80%;
+
+            }   
+        }
+
+
+
+            
+           
+           
+
+
+
