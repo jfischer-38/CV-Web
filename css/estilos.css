@@ -709,7 +709,7 @@ list-style: none;
              
     .habilidades h2 {
         font-size: 20px;
-        margin-left: 120px;
+        margin-left: 100px;
     }
     .habilidades i {
         font-size: 20px;
@@ -726,7 +726,7 @@ list-style: none;
         grid-template-columns: 120px 1fr;
         Justify-content:left;
         align-items: right;
-        padding: 0 140px; 
+        padding: 0 110px; 
         margin-top: 0.8rem;
         font-size: 1.3rem;
     }
