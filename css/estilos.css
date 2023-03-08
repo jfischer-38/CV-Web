@@ -718,6 +718,7 @@ list-style: none;
               
     .habilidades{
         margin-top: 10px;
+        width: 20%;
     } 
     .habilidades .barras {
         Position:relative;
@@ -747,6 +748,7 @@ list-style: none;
         grid-column:1/8 ;
         margin-left: 15px;
         margin-top: 10px;
+        
     }
     .experiencia h2 {
         font-size: 20px;
@@ -760,6 +762,7 @@ list-style: none;
     .sección_experiencia_info td {
         padding: 0px 10px;
         font-size: 10px;
+        padding: 3px 0px 11px;
     }
     .sección_experiencia_info .año{
         font-weight: var(--bold);
@@ -775,27 +778,32 @@ list-style: none;
     .estudios h2 {
         font-size: 20px;
         margin-left: 0px;
+        margin-top: 5px;
+        
     }
         
     .estudios i {
         font-size: 20px;
         margin-left: 0px;
+        margin-top: 3px;
     }
         
     .estudios {
         grid-row: 3/4;
         grid-column: 1/12;
-        padding: 590px 0px;
+        padding: 610px 0px;
         margin-top: 0px;
         align-items: right;
-        margin-left: 60px;           
+        margin-left: 60px;
+        width: 60%;           
     }
         
     .sección_estudios_info td {
-        padding: 1px 20px 0px;
+        padding: 3px 0px 11px;
         margin-right: 10px;
         margin-left: 15px;
         font-size: 10px;
+        
      }
         
     .sección_estudios_info .año{
